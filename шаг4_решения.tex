@@ -278,7 +278,7 @@ $
 Вычислить: 
 $
 i^{77}, i^{98}, i^{-57}, i^n,
-$ n  - целое число\\
+$ n  - целое число
 \begin{center}\textbf{Решение}\end{center}
 $
 i^2=-1\\
@@ -301,9 +301,11 @@ n = 4k+3,n \in \mathbb {Z}, i^n = -i\\
 Доказать равенство... или сделать так, чтобы левое стало равно правому\\
 \\
 \textbf{a)}\\
+\begin{center}\textbf{Пример}\end{center}
 $
-(1+i)^8n=2^4n\\
+(1+i)^8n=2^4n
 $
+\begin{center}\textbf{Решение}\end{center}
 Сводим к одной степени:
 $$
 (1+i)^2)^{4n}=2^{4n}\\
@@ -324,4 +326,100 @@ $$
 $
 2^{4n}=2^{4n}
 $
+
+\newpage
+\textbf{б)}\\
+\begin{center}\textbf{Пример}\end{center}
+$
+(1+i)^{4n}=(-1)2^{2n}
+$
+\begin{center}\textbf{Решение}\end{center}
+$
+(((1+i)^2)^2)^n=-2^{2n}\\
+((2i)^2)^n=-4^n\\
+-4^n=-4^n
+$
+
+\newpage
+\subsection{Задание 20.4}
+Решить систему уравнений:\\
+во всех заданиях очень помогал финт ушами про избавление от иррациональности в знаменателе.\\
+\textbf{a)}\\
+\begin{center}\textbf{Пример}\end{center}
+\begin{equation*}
+ \begin{cases}
+(1+i)z_1+(1-i)z_2=1+i\\
+(1-i)z_1+(1+i)z_2=1+3i
+ \end{cases}
+\end{equation*}
+\begin{center}\textbf{Решение}\end{center}
+Во втором уравнении вынесем все, кроме $z_1$ в правую часть:\\
+\\
+$
+\displaystyle
+z_1=\frac{1+i-(1-i)z_2}{1+i}
+=1-\frac{(1-i)z_2}{1+i}
+$\\
+\\
+Подставим в первое уравнение:\\
+\\
+$
+\displaystyle
+(1-i)(1-\frac{(1-i)z_2}{1+i})+(1+i)z_2=1+3i\\
+1-i-\frac{(1-i)^2\cdot z_2}{1+i}+(1+i)z_2=1+3i\\
+...\\
+(1-i)^2=-2i\\
+...\\
+1-i+\frac{2iz_2}{1+i}+z_2+z_2i=1+3i\\
+\frac{2iz_2}{1+i}+z_2+z_2i=1+3i-1+i\\
+z_2(\frac{2i}{1+i}+1+i)=4i\\
+z_2=\frac{4i}{\frac{2i}{1+i}+1+i}\\
+...\\
+(1+i)^2=2i\\
+\frac{2i}{1+i}+1+i=
+\frac{2i+2i}{1+i}=\frac{4i}{1+i}\\
+...\\
+z_2=\frac{4i}{\frac{4i}{1+i}}=4i\frac{1+i}{4i}=1+i\\
+$\\
+Подставим в выведенное ранее $z_1$:\\
+$\\
+z_1=1-\frac{(1-i)(1+i)}{1+i}=1+i-1=i
+$
+
+\newpage
+\textbf{б)}\\
+\begin{center}\textbf{Пример}\end{center}
+\begin{equation*}
+ \begin{cases}
+iz_1+(1+i)z_2=2+2i\\
+2iz_1+(3+2i)z_2=5+3i\\
+ \end{cases}
+\end{equation*}
+\begin{center}\textbf{Решение}\end{center}
+Во втором уравнении выразим $z_1$:\\
+$\\
+\displaystyle
+z_1=\frac{5+3i-(3+2i)z_2}{2i}=\\
+$\\
+Подставим в первое уравнение:\\
+\\
+$
+\displaystyle
+i\frac{5+3i-(3+2i)z_2}{2i}+z_2+iz_2=2(1+i)\\
+\frac{5+3i-(3+2i)z_2}{2}+z_2+iz_2=2(1+i)\\
+\frac{5+3i}{2}-\frac{(3+2i)z_2}{2}+z_2+iz_2=2(1+i)\\
+-\frac{(3+2i)z_2}{2}+z_2+iz_2=2(1+i)-\frac{5+3i}{2}\\
+\frac{-3z_2-2iz_2+2z_2+2iz_2}{2}=2(1+i)-\frac{5+3i}{2}\\
+-\frac{z_2}{2}=2(1+i)-\frac{5+3i}{2}\\
+-z_2=4(1+i)-5-3i=4+4i-5-3i\\
+z_2=-4-4i+5+3i=1-i\\
+$\\
+Подставим полученное значение $z_2$ в формулу $z_1$:\\
+\\
+$
+\displaystyle
+z_1=\frac{5+3i-(3+2i)(1-i)}{2i}=
+\frac{5+3i-3+3i-2i-2}{2i}=\frac{4i}{2i}=2\\
+$
+
 \end{document}
