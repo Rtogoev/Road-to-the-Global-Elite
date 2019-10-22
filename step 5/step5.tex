@@ -362,6 +362,7 @@ $
 \section{Операции с событиями, формула сложения вероятностей, независимые события}
 
 Чтобы здесь хоть что-то решить, лучше полностью выучить теорию из всех прерыдущих глав.
+
 \newpage
 \subsection{Задание 31}
 
@@ -424,5 +425,29 @@ $\\
 $
 n_{\overline{A \cap B}}=36-17=19
 P(\overline{A \cap B})=\frac{19}{36}
+$
+
+
+\newpage
+\subsection{Задание 32}
+
+A - Анжи победит МЮ\\
+B - Зенит победит Барселону\\
+С -  наши победят\\
+D - только одна наша команда победит\\ 
+E - никто из наших не победит\\
+F - выиграет только Зенит\\
+$\\
+P(A)=0.3\\
+P(B)=0.4\\
+P(C)=P(A \cap B)=0.3\cdot 0.4=0.12\\
+P(D)=P(
+(A \cap \overline{B})
+ \cup
+ (\overline{A} \cap {B})
+)=P(A)\cdot P(\overline{B})+P(\overline{A})\cdot P( B)
+=0.3\cdot 0.6+0.7\cdot 0.4=0.76\\
+P(E)=P(\overline{A}\cap \overline{B})=P(\overline{A})\cdot P(\overline{B})=0.6\cdot 0.7=0.42\\
+P(F)=P(\overline{A}\cap B)=0.28
 $
 \end{document}
